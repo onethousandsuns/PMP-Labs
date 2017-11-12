@@ -1,0 +1,12 @@
+2. Определите заголовки запроса браузера и ответа сервера при запросе 
+#5 приложения PrintHello.
+
+https://i.imgur.com/ugaqWFG.png
+
+
+Определите отличие заголовков ответа сервера для программы 
+PrintHelloHTML от PrintHello.
+
+https://i.imgur.com/v7rmEOe.png
+
+Отличается Content-Type	
