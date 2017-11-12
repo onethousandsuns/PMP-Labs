@@ -1,17 +1,4 @@
 ﻿<?php
-function isOperationValid( $operation ){
-	$operations = array( 'add', 'sub', 'mul', 'div' );
-	return in_array( $operation, $operations );
-}
-
-function isParameterExists( $parameter ){
-	return isset( $_GET[$parameter] );
-}
-
-function isParameterCanBeConvertedToNumber( $parameter ){
-	return is_numeric( $_GET[$parameter] );
-}
-
 $queryParams = [];
 parse_str( $_SERVER['QUERY_STRING'], $queryParams );
 
@@ -49,3 +36,16 @@ if ( count( $queryParams ) !== 3 ){
 }
 
 echo $resultMessage;
+
+function isOperationValid( $operation ){
+	$operations = array( 'add', 'sub', 'mul', 'div' );
+	return in_array( $operation, $operations );
+}
+
+function isParameterExists( $parameter ){
+	return isset( $_GET[$parameter] );
+}
+
+function isParameterCanBeConvertedToNumber( $parameter ){
+	return is_numeric( $_GET[$parameter] );
+}
